@@ -20,6 +20,9 @@
 ***斜粗体***
 ~~hello world~~
 <u>hello world</u>
+==标记文本==
+H~2~O is是液体
+2^10^ 运算结果是 1024
 创建脚注格式类似这样[^RUNOOB]
 [^RUNOOB]:菜鸟教程--学的不是技术，是梦想
 
@@ -36,6 +39,20 @@
 1. 第一项
 2. 第二项
 3. 第三项
+
+- [ ] 计划任务
+- [x] 完成任务
+
+自定义列表
+
+Markdown
+: Text-to-HTML conversion tool
+
+Authors
+: John
+: Luke
+
+
 
 > 区块引用
 你个小菜鸟IDis年底阿斯
