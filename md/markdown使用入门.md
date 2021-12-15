@@ -113,6 +113,28 @@ function hanshu() {
 **文本加粗**
 \*\*文本不加粗\*\*
 
+[锚点1](#maodian1)
+[锚点2](#maodian2)
+
+A
+A
+A
+A
+A
+A
+A
+A
+<span id="maodian1">maodian1</span>
+A
+A
+A
+A
+A
+A
+A
+A
+A
+<span id="maodian2">maodian2</span>
 <!-- $$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\

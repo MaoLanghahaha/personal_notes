@@ -10,23 +10,32 @@
 
 <body>
   <script>
-    var a;
-    console.log("1",a);// undefined
-    a = 10;
-    console.log("2",a);// 10
-    window.test();
-    function test() {
-      console.log("三十多岁多",a);// 10 访问的全局变量a
-      var a;
-      console.log("3",a);// undefined
-      a = 20;
-      console.log("4",a);// 20 访问的局部变量a
-      console.log("window.a =",window.a); // 10 访问的全局变量a等价于window.a
-      window.a = a; // 20 // 将局部变量a的值赋值给全局变量a
+    // var a;
+    // console.log("1",a);// undefined
+    // a = 10;
+    // console.log("2",a);// 10
+    // window.test();
+    // function test() {
+    //   console.log("三十多岁多",a);// 10 访问的全局变量a
+    //   var a;
+    //   console.log("3",a);// undefined
+    //   a = 20;
+    //   console.log("4",a);// 20 访问的局部变量a
+    //   console.log("window.a =",window.a); // 10 访问的全局变量a等价于window.a
+    //   window.a = a; // 20 // 将局部变量a的值赋值给全局变量a
+    // }
+
+    // console.log("5",a);// 20 访问的全局变量a等价于window.a
+    // console.log("window.a =", window.a); // 20
+
+    var a = [];
+    for (var i = 0; i < 10; i++) {
+      a[i] = function () {
+        return i;
+       
+      }
+      console.log(a[i]());
     }
-   
-    console.log("5",a);// 20 访问的全局变量a等价于window.a
-    console.log("window.a =", window.a); // 20
   </script>
 </body>
 
