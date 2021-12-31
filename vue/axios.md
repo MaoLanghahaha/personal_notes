@@ -160,3 +160,12 @@ export function getHomeMultidata() {
   })
 }
 ```
+```javascript
+// Home.vue
+getHomeMultidata () { // 多一层封装，提高复用性
+  getHomeMultidata().then(res => {
+    this.banners = res.data.banner.list;
+    this.recommends = res.data.recommend.list;
+  }).catch(err => { console.log(err); })
+},
+```

@@ -83,6 +83,7 @@ sdopasidosa
 ```javascript
 function hanshu() {
   alert("Hello world!")
+  console.log()
 }
 ```
 

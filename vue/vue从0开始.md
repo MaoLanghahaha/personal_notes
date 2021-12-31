@@ -127,6 +127,28 @@
 ### 三、项目模块划分
 #### 框架组件创建
 #### 框架路由搭建
+
+
+
+### 将数据整合传递给组件
+> 对于复杂的数据，将其整合成一个对象传递给组件，组件只需面向一个对象进行开发。
+```javascript
+// network/detail.js
+export class GoodInfo { // 定义一个类
+  constructor(itemInfo, columns, services) {
+    this.title = itemInfo.title;
+      this.desc = itemInfo.desc;
+      this.newPrice = itemInfo.price;
+      this.oldPrice = itemInfo.oldPrice;
+      this.realPrice = itemInfo.lowNowPrice;
+      this.discount = itemInfo.discountDesc;
+      this.columns = columns;
+      this.services = services;
+  }
+}
+```
+
+
 [^normalize.css]:A modern alternative to CSS resets
 [^vue.config.js]:vue.config.js 是一个可选的配置文件，如果项目的 (和 package.json 同级的) 根目录中存在这个文件，那么它会被 @vue/cli-service 自动加载。
     ```javascript
