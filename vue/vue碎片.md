@@ -66,7 +66,7 @@ mounted () {
 this.$refs.tabControl.$el.offsetTop; // 获取组件DOM元素
 ```
 
-### keep-alive和actived、deactivated
+#### keep-alive和actived、deactivated
 > <keep-alive> 包裹动态组件时，会缓存不活动的组件实例，而不是销毁它们。和 <transition> 相似，<keep-alive> 是一个抽象组件：它自身不会渲染一个 DOM 元素，也不会出现在父组件链中。
 当组件在 <keep-alive> 内被切换，它的 activated 和 deactivated 这两个生命周期钩子函数将会被对应执行。通过描述我们知道，它会缓存不活动的组件，而不是销毁。这样组件之间的切换就能保存上个组件的状态，而不是切换之后又得重新操作。
 ```javascript
@@ -76,8 +76,8 @@ this.$refs.tabControl.$el.offsetTop; // 获取组件DOM元素
 </keep-alive>
 ```
 
-### vue中使用go()和back()两种返回上一页的区别
-> this.$router.go(-1); // 后退加刷新   this.$router.back(-1); // 后退不刷新
+#### vue中使用go()和back()两种返回上一页的区别
+    this.$router.go(-1); // 后退加刷新   this.$router.back(-1); // 后退不刷新
 
-### 判断obj是否为空对象
-> Object.keys(obj).length !== 0
+#### 判断obj是否为空对象
+    Object.keys(obj).length !== 0
