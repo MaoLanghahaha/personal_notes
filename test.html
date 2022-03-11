@@ -27,12 +27,11 @@
 
     // console.log("5",a);// 20 访问的全局变量a等价于window.a
     // console.log("window.a =", window.a); // 20
-
+    
     var a = [];
     for (var i = 0; i < 10; i++) {
       a[i] = function () {
         return i;
-       
       }
       console.log(a[i]());
     }
